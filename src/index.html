@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+        <script src="load.js"></script>
+        <title>Pokedex</title>
+    </head>
+    <body class="unselectable" unselectable="on">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="https://pokeapi.co/" target="__blank">
+                    <img class="nav__logo--img" src="assets/Pokemon.png" alt="">
+                </a>
+            </div>
+            <div class="nav__pages">
+                <a href="#" class="nav__pages--item">Home</a>
+                <a href="https://www.pokemon.com/us/pokedex/" target="__blank" class="nav__pages--item">Pokemons</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="change" onclick="previousPokemon()">
+                <i class="material-icons">navigate_before</i>
+            </div>
+            <div class="evolutions prev">
+                <div class="evolutions__item">
+                    <img class="evolutions__item--img" src="" alt="pokemon1">
+                    <span class="evidence"><b>Name: </b><span></span></span>
+                    <span class="evidence"><b>Type: </b><span></span></span>
+                </div>
+                <div class="evolutions__item">
+                    <img class="evolutions__item--img" src="" alt="pokemon2">
+                    <span class="evidence"><b>Name: </b><span></span></span>
+                    <span class="evidence"><b>Type: </b><span></span></span>
+                </div>
+                <div class="evolutions__item">
+                    <img class="evolutions__item--img" src="" alt="pokemon3">
+                    <span class="evidence"><b>Name: </b><span></span></span>
+                    <span class="evidence"><b>Type: </b><span></span></span>
+                </div>
+            </div>
+            <div class="change next" onclick="nextPokemon()">
+                <i class="material-icons">navigate_next</i>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__logo">
+                <img class="footer__logo--img" src="https://cdn.shortpixel.ai/client/to_webp,q_lossy,ret_img/https://dextra.com.br/wp-content/uploads/2019/02/dextra-logo-3.png" alt="Logo Dextra">
+                <img class="footer__logo--img" src="https://cdn.shortpixel.ai/client/q_lossy,ret_img/https://dextra.com.br/wp-content/uploads/2019/03/mutant_footer.png" alt="Logo Mutant">
+            </div>
+            <div class="footer__contact">
+                <span>Pokedex</span><br>
+                <span>Dextra Digital</span><br>
+                <span>Pokemons are cool</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
